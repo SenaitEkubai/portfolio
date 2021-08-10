@@ -39,7 +39,7 @@ a:hover {
 .about {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url("/home/cyf/Documents/GitHub/portfolio/src/logos/background.png");
+  /*  background-image: url("/home/cyf/Documents/GitHub/portfolio/src/logos/background.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
