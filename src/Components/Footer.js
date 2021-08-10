@@ -1,7 +1,7 @@
 import React from "react";
-import linkedin from "../Components/logos/linkedin.svg";
-import email from "../Components/logos/email.svg";
-import github from "../Components/logos/github.png";
+import linkedin from "../logos/linkedin.svg";
+import email from "../logos/email.svg";
+import github from "../logos/github.png";
 export default function Footer() {
   return (
     <div className="footer">

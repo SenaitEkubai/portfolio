@@ -1,8 +1,8 @@
-import repairsforyou from "../Components/project images/repairsforyou.png";
-import tvshow from "../Components/project images/tvshow.png";
-import hotel1 from "../Components/project images/hotel1.png";
-import countries from "../Components/project images/countries.png";
-import videorecommendation from "../Components/project images/videorecommendation.png";
+import repairsforyou from "../project images/repairsforyou.png";
+import tvshow from "../project images/tvshow.png";
+import hotel1 from "..//project images/hotel1.png";
+import countries from "..//project images/countries.png";
+import videorecommendation from "../project images/videorecommendation.png";
 
 export const projects = [
   {
