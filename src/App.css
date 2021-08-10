@@ -1,38 +1,168 @@
+body,
+html {
+  /*  background-color: rgba(2, 113, 156, 0.452); */
+}
+p {
+  font-size: small;
+}
+/* *************************************************app**************************************************************************/
 .App {
-  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+/*********************************************navbar****************************************************************************/
+
+.navLinks {
+  width: 70%;
+  /* background-color: salmon;
+   */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLinks a {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  font-size: larger;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: none;
+  color: wheat;
 }
+/***************************************************home/about***************************************************************/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url("/home/cyf/Documents/GitHub/portfolio/src/logos/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  color: white;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/*****************************************text and image that goes over the background image**************************/
+.info {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.info :nth-child(2) {
+  align-self: center;
+  padding-top: 0rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.info :nth-child(3) {
+  align-self: center;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.about img {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 0rem;
+  align-self: center;
+}
+.about .info img:hover {
+  transform: scale(3.5);
+}
+.about a {
+  align-self: center;
+}
+.btn-warning {
+  width: max-content;
+  height: max-content;
+  background-color: orange;
+  align-self: center;
+  margin-top: 0.5rem;
+}
+/***********************************************************intro about me section of the main page***************************************************/
+.intro h1 {
+  text-align: center;
+  padding-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+/*****************************************************contact page**********************************/
+.contact {
+  margin-top: 5rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
+.contact > div > a {
+  padding-left: 2rem;
+}
+.contact h2 {
+  color: rgb(36, 10, 10);
+}
+/*****************************************************technologies section**********************************/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-container {
+  width: 80%;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.grid-container > img {
+  height: 140px;
+  width: 140px;
+  border-radius: 1rem;
+  box-shadow: grey;
+}
+/*****************************************************projects page**********************************/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 3rem;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.projects h2 {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: rgb(36, 10, 10);
+}
+.card h3 {
+  font-weight: 400;
+  font-size: large;
+  text-align: center;
+}
+.card p {
+  text-align: justify;
+}
+.card a {
+  background-color: orange;
+  width: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.footer {
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
 }
