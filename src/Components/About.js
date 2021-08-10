@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import profile from "../logos/profile2.jpg";
+import profile from "../Components/logos/profile2.jpg";
 import Footer from "./Footer";
 import Introduction from "./Introduction";
 import MySkills from "./MySkills";
