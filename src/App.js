@@ -4,6 +4,9 @@ import About from "./Components/About";
 import NavLinks from "./Components/NavLinks";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
+import MySkills from "./Components/MySkills";
+import Resume from "./Components/Resume";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,14 +18,14 @@ function App() {
             <Route exact path="/">
               <About />
             </Route>
-            <Route path="/projects">
-              <Projects />
+            <Route path="/Skills">
+              <MySkills />
             </Route>
-            {/*  <Route path="/blogs">
-              <p>blogs</p>
-            </Route> */}
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/resume">
+              <Resume />
             </Route>
           </Switch>
         </div>
