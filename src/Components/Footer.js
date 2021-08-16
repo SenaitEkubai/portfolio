@@ -6,6 +6,9 @@ export default function Footer() {
   return (
     <div className="footer">
       <div>
+        <p>Senait Ekubai&copy; </p>
+      </div>
+      <div>
         <img src={linkedin} width="20" height="20" alt="linkedin logo"></img>
         <a href="https://www.linkedin.com/in/senait-ekubai/">SenaitEkubai</a>
       </div>

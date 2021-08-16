@@ -32,7 +32,7 @@ p {
 }
 a:hover {
   text-decoration: none;
-  color: wheat;
+  color: rgb(88, 34, 34);
 }
 /***************************************************home/about***************************************************************/
 
@@ -87,12 +87,26 @@ a:hover {
 .about a {
   align-self: center;
 }
+.mainpage-buttons {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainpage-buttons :nth-child(2) {
+  margin-left: 1rem;
+  width: 7rem;
+}
+.mainpage-buttons :first-child {
+  width: 7rem;
+}
 .btn-warning {
   width: max-content;
   height: max-content;
   background-color: orange;
   align-self: center;
   margin-top: 0.5rem;
+  font-size: small;
+  font-style: italic;
 }
 /***********************************************************intro about me section of the main page***************************************************/
 .intro h1 {
@@ -120,19 +134,28 @@ a:hover {
   padding-top: 2rem;
   border-radius: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 .grid-container > img {
-  height: 140px;
-  width: 140px;
+  height: 80px;
+  width: 80px;
   border-radius: 1rem;
   box-shadow: grey;
+}
+
+.technologies-and-skills h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.technologies-and-skills h3 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 /*****************************************************projects page**********************************/
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 3rem;
 }
 .buttons {
@@ -150,6 +173,9 @@ a:hover {
   font-size: large;
   text-align: center;
 }
+.cards .card img:hover {
+  transform: scale(2.2);
+}
 .card p {
   text-align: justify;
 }
@@ -162,7 +188,93 @@ a:hover {
   padding-bottom: 0.3rem;
 }
 .footer {
+  margin-top: 300px;
   background-color: grey;
   display: flex;
   justify-content: space-around;
+}
+/**************************************resume *********************************************/
+.resume {
+  display: flex;
+  width: 100%;
+}
+.left-side {
+  background-color: white;
+  width: 20%;
+  margin-right: 10%;
+}
+.left-side img {
+  height: 10rem;
+  width: 10rem;
+}
+.education ul li:first-child {
+  list-style: none;
+}
+.contacts {
+  display: inline-block;
+}
+.contacts img {
+  height: 15px;
+  width: 15px;
+  margin-right: 0.5rem;
+}
+.right-side {
+  background-color: rgb(14, 30, 41);
+  width: 70%;
+  color: white;
+}
+.right-side hr {
+  background-color: rgb(102, 35, 35);
+  width: 60%;
+  margin-left: 0;
+}
+/* .right-side h3 {
+  text-align: center;
+} */
+.experience,
+.education {
+  display: flex;
+  justify-content: space-between;
+}
+.experience h5,
+.education h5 {
+  font-weight: 400;
+  font-size: small;
+}
+.experience ul,
+.education ul {
+  width: 80%;
+}
+.experience ul > li,
+.education ul > li {
+  font-size: small;
+}
+.experience ul li:first-child,
+.education ul li:first-child {
+  list-style: none;
+  font-size: medium;
+  text-align: left;
+}
+.education ul > li {
+  list-style: none;
+}
+.education ul li:nth-child(2) {
+  font-size: medium;
+}
+.hardskills,
+.softskills {
+  display: flex;
+}
+.softskills,
+.hardskills h5 {
+  font-size: medium;
+}
+.hardskills ul,
+.softskills ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  font-size: small;
+  width: 85%;
 }
