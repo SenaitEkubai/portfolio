@@ -117,7 +117,7 @@ a:hover {
 /*****************************************************contact page**********************************/
 .contact {
   margin-top: 5rem;
-  width: 30%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -126,6 +126,13 @@ a:hover {
 }
 .contact h2 {
   color: rgb(36, 10, 10);
+}
+
+.contact :nth-child(4) > div {
+  padding-top: 1rem;
+}
+.contact :nth-child(4) div > a {
+  padding-left: 1rem;
 }
 /*****************************************************technologies section**********************************/
 
@@ -187,12 +194,7 @@ a:hover {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
-.footer {
-  margin-top: 300px;
-  background-color: grey;
-  display: flex;
-  justify-content: space-around;
-}
+
 /**************************************resume *********************************************/
 .resume {
   display: flex;
@@ -228,9 +230,6 @@ a:hover {
   width: 60%;
   margin-left: 0;
 }
-/* .right-side h3 {
-  text-align: center;
-} */
 .experience,
 .education {
   display: flex;
@@ -277,4 +276,177 @@ a:hover {
   list-style: none;
   font-size: small;
   width: 85%;
+}
+
+/* footer */
+.footer {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+/****************************************media query *****************************************************/
+@media only screen and (max-width: 600px) {
+  /* App  */
+  .App {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  /* nav links */
+  .navLinks a {
+    color: rgb(7, 7, 7);
+    font-size: small;
+    padding-right: 2rem;
+  }
+  /* info section of the main page  */
+  .about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .info {
+    width: 80%;
+    text-align: center;
+  }
+  .about img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .info :nth-child(3) {
+    align-self: center;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .info :nth-child(2) {
+    align-self: center;
+    padding-top: 0rem;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+  /* projects */
+  .projects h2 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    color: rgb(36, 10, 10);
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 1rem;
+  }
+  .card h3 {
+    font-size: medium;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+  }
+  /* contact page  */
+  .contact h2 {
+    font-size: large;
+    text-align: center;
+  }
+  .contact {
+    width: 70%;
+  }
+  /* skills */
+
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+  .grid-container > img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.1rem;
+  }
+
+  .technologies-and-skills h2 {
+    font-size: larger;
+  }
+  .technologies-and-skills h3 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: medium;
+  }
+  .technologies-and-skills :nth-child(5) p {
+    font-size: small;
+  }
+  /* resume  */
+  /* left side  */
+  .left-side img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .left-side {
+    background-color: white;
+    width: 30%;
+    margin-right: 3%;
+  }
+  .left-side h3 {
+    font-size: medium;
+  }
+
+  .hardskills,
+  .softskills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hardskills ul,
+  .softskills ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: small;
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .left-side h5 {
+    font-size: medium;
+  }
+  .left-side h6 {
+    font-size: medium;
+  }
+  .contacts img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  .contacts a {
+    font-size: x-small;
+  }
+  /* right side  */
+  .right-side h3 {
+    font-size: large;
+    font-weight: 600;
+  }
+  .experience,
+  .education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .experience ul,
+  .education ul {
+    width: 100%;
+  }
+  .experience ul > li,
+  .education ul > li {
+    width: 100%;
+  }
+  .experience ul > li:first-child,
+  .education ul > li:first-child {
+    font-size: small;
+    font-weight: 600;
+    font-style: italic;
+  }
+  /* footer */
+  .footer {
+    flex-direction: column;
+  }
 }
