@@ -18,15 +18,7 @@ export default function Footer() {
           <img src={linkedin} width="20" height="20" alt="linkedin logo"></img>
         </a>
       </div>
-      <div>
-        <a
-          href="https://github.com/SenaitEkubai"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={github} width="20" height="20" alt="github logo"></img>
-        </a>
-      </div>
+
       <div>
         <Link to="/contact">
           {" "}
