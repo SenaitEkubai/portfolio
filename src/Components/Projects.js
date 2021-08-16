@@ -12,10 +12,14 @@ export default function Projects() {
             <img src={project.img} alt=""></img>
             <p>{project.desc}</p>
             <div className="buttons">
-              <a href={project.app} target="_blank">
+              <a href={project.app} target="_blank" rel="noopener noreferrer">
                 app
               </a>
-              <a href={project.github} target="_blank">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 code
               </a>
             </div>

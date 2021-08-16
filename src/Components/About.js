@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import profile from "../logos/profile2.jpg";
 import Footer from "./Footer";
-import Introduction from "./Introduction";
-import MySkills from "./MySkills";
 import Projects from "./Projects";
 export default function About() {
   return (
@@ -23,7 +21,6 @@ export default function About() {
           </Link>
         </div>
       </div>
-      <Introduction />
       <Projects />
       <Footer />
     </div>

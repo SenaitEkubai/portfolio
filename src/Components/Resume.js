@@ -1,6 +1,5 @@
 import React from "react";
 import profile from "../logos/profile2.jpg";
-import { technicalSkills } from "./Skills";
 import linkedin from "../logos/linkedin.svg";
 import email from "../logos/email.svg";
 
@@ -8,7 +7,7 @@ export default function Resume() {
   return (
     <div className="resume">
       <div className="left-side">
-        <img src={profile}></img>
+        <img src={profile} alt="profile"></img>
         <h3>Senait Ekubai</h3>
         <hr></hr>
         <p>

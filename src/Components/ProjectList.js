@@ -57,7 +57,6 @@ export const projects = [
     github: "https://github.com/SenaitEkubai/job-listings-react",
     app: "https://cyf-senaitekubai-jobs.netlify.app/",
   },
-  ,
   {
     name: "Baby Names",
     img: babynames,

@@ -13,11 +13,23 @@ export default function Contact() {
       </p>
       <div>
         <img src={linkedin} width="20" height="20" alt="linkedin logo"></img>
-        <a href="https://www.linkedin.com/in/senait-ekubai/">SenaitEkubai</a>
+        <a
+          href="https://www.linkedin.com/in/senait-ekubai/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SenaitEkubai
+        </a>
       </div>
       <div>
         <img src={github} width="20" height="20" alt="github logo"></img>
-        <a href="https://github.com/SenaitEkubai">SenaitEkubai</a>
+        <a
+          href="https://github.com/SenaitEkubai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SenaitEkubai
+        </a>
       </div>
       <div>
         <img src={email} width="20" height="20" alt="email log"></img>
