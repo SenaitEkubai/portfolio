@@ -12,8 +12,12 @@ export default function Projects() {
             <img src={project.img} alt=""></img>
             <p>{project.desc}</p>
             <div className="buttons">
-              <a href={project.app}>app</a>
-              <a href={project.github}>code</a>
+              <a href={project.app} target="_blank">
+                app
+              </a>
+              <a href={project.github} target="_blank">
+                code
+              </a>
             </div>
           </div>
         ))}
