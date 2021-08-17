@@ -1,7 +1,6 @@
 import React from "react";
 import linkedin from "../logos/linkedin.svg";
 import email from "../logos/email.svg";
-import github from "../logos/github.png";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
